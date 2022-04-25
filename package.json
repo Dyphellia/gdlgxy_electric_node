@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.4",
     "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.15",
     "xmldom": "^0.6.0",
     "xpath": "0.0.32"
   }

@@ -60,9 +60,7 @@ const usedPower = () => {
                 Remaining,
                 TimeStamp
             }
-            console.log(printObj)
         }
-
         if (config.isPush && Number(Remaining) <= config.Power) {
             Prompt(Number(Remaining))
         }
@@ -87,7 +85,7 @@ const Prompt = (electric) => {
 
 const morningSchedule = () => {
     //每天早上8点触发
-    schedule.scheduleJob('0 0 8 * * *', () => {
+    schedule.scheduleJob('0 0 10 * * *', () => {
         usedPower();
     })
 }
